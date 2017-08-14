@@ -6,7 +6,6 @@ function data=genData(centerCnt,clusterCnt,T)
 %T: the sigma of normal random numbers
 data=[];
 for i=1:centerCnt
-    newdata=[ceil(randi(100,1,1)+T.*randn(clusterCnt,1)),ceil(randi(100,1,1)+T.*randn(clusterCnt,1))];
+    newdata=[ceil(randi(300,1,1)+T.*randn(clusterCnt,1)),ceil(randi(300,1,1)+T.*randn(clusterCnt,1))];
     data=[data;newdata];
 end
-plot(data(:,1),data(:,2),'bo');hold on;
